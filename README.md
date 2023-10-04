@@ -69,7 +69,7 @@ where `a` is the lower limit, `b` is the upper limit and `c` is the mode.
 ## Usage
 
 ```javascript
-import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-mean@deno/mod.js';
+import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-mean@v0.1.1-deno/mod.js';
 ```
 
 #### mean( a, b, c )
@@ -135,7 +135,7 @@ y = mean( 0.0, -1.0, 0.5 );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-mean@deno/mod.js';
+import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-mean@v0.1.1-deno/mod.js';
 
 var a;
 var b;
