@@ -62,14 +62,32 @@ where `a` is the lower limit, `b` is the upper limit and `c` is the mode.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-triangular-mean
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-mean@deno/mod.js';
+var mean = require( '@stdlib/stats-base-dists-triangular-mean' );
 ```
 
 #### mean( a, b, c )
@@ -134,8 +152,8 @@ y = mean( 0.0, -1.0, 0.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-mean@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var mean = require( '@stdlib/stats-base-dists-triangular-mean' );
 
 var a;
 var b;
@@ -238,8 +256,8 @@ int main( void ) {
 
     for ( i = 0; i < 25; i++ ) {
         a = random_uniform( 0.0, 10.0 );
-        b = random_uniform( 0.0, 10.0 ) + a;
-        c = a + (b - a) * random_uniform( 0.0, 1.0 ); // mode between a and b
+        b = random_uniform( a, 10.0 + a );
+        c = random_uniform( a, b ); // mode between a and b
         y = stdlib_base_dists_triangular_mean( a, b, c );
         printf( "a: %lf, b: %lf, c: %lf, E(X;a,b,c): %lf\n", a, b, c, y );
     }
@@ -275,7 +293,7 @@ int main( void ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
