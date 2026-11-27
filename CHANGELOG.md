@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-26)
+## Unreleased (2026-11-27)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`09cb5fe`](https://github.com/stdlib-js/stdlib/commit/09cb5fec2e06c1720ce731b33507117986632646) - **refactor:** use `constants/float64/nan` in `stats/base/dists/triangular/mean` [(#16852)](https://github.com/stdlib-js/stdlib/pull/16852) _(by Kartik)_
 -   [`f008bf3`](https://github.com/stdlib-js/stdlib/commit/f008bf3988c36006ff71feacc7cfe4af94c149ae) - **bench:** refactor random number generation in `stats/base/dists/triangular` [(#16644)](https://github.com/stdlib-js/stdlib/pull/16644) _(by Parth Dembla, Athan Reines)_
 -   [`2ca1d14`](https://github.com/stdlib-js/stdlib/commit/2ca1d1403bf79fdb239132f3d5350f0aac9c381b) - **test:** migrate `stats/base/dists/triangular/mean` to ULP-based assertions [(#15364)](https://github.com/stdlib-js/stdlib/pull/15364) _(by Devansh Patel)_
 -   [`d3eaad3`](https://github.com/stdlib-js/stdlib/commit/d3eaad35f633c731ce8112190d74bb2a7577e1e8) - **chore:** clean-up [(#15039)](https://github.com/stdlib-js/stdlib/pull/15039) _(by Philipp Burckhardt, Athan Reines)_
@@ -41,10 +42,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Devansh Patel
+-   Kartik
 -   Om-A-osc
 -   Parth Dembla
 -   Philipp Burckhardt
